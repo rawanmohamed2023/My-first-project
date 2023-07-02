@@ -1,0 +1,1175 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 7700px;
+    
+}
+/* ---------------------------------------------------------------------------------- */
+.contener1{
+    width: 100%;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/back3.jpg);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: fixed; */
+}
+.backcolor{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: black;
+    margin: auto;
+}
+.title1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.wel{
+    font-size: 70px;
+    color: antiquewhite;
+}
+.para1{
+   font-size: 35px;
+   color: antiquewhite;
+}
+.button1{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(240, 87, 41);
+    border-radius: 20px;
+    margin-top: 20px;
+    color: bisque;
+}
+.button2{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: 20px;
+    color: bisque;
+}
+.button1:active{
+    background-color: rgb(240, 87, 41);
+     opacity: 0.4;
+     color: rgb(0, 0, 0);
+}
+.button2:active{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+    color: aliceblue;
+}
+/* ----------------------------------------------------------------------------------------- */
+                                   /* header */
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    opacity: 0.9;
+    /* position: relative;  */
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.logo{
+   width: 50px;
+    height:45px;
+    border-radius: 50%;
+    float:left ;
+    margin-top: 1.5px;
+    margin-left: 30px;
+}
+.list1{
+    list-style: none;
+    margin-right: 35px;
+}
+.list1 li a{
+    text-decoration: none;
+    color: rgb(246, 231, 213);
+}
+.list1 li{
+    font-size: 30px;
+    float:right;
+    margin-right: 30px;
+    margin-top: 7px;
+}
+/* -------------------------------------------------------------------------------------------- */
+                                             /*welcome to wep  */
+.title2{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 90px;
+}
+.line1{
+    width: 250px;
+    height: 4px;
+    background-color: rgb(214, 112, 30);
+    margin-left:590px ;
+}
+.contener2{
+    width: 100%;
+}
+.content1{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 120px;
+    position: relative;
+}
+.section1{
+    width:30% ;
+    height:260px;
+    border: 3px solid rgb(0, 0, 0) ;
+     float: left;
+     position: relative;
+}
+.section2{
+    width:30% ;
+    height:260px;
+    border: 3px solid rgb(0, 0, 0) ;
+    margin: 0 5%;
+    float: left;
+    position: relative;
+}
+.section3{
+    width:30% ;
+    height:260px;
+    border: 3px solid rgb(0, 0, 0) ;
+    float: left;
+    position: relative;
+}
+.eating{
+  margin-top: 10px;
+  font-size: 50px;
+  margin-left: 130px;
+  color: rgb(214, 112, 16);
+  /* z-index: 2; */
+}
+.money{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 130px;
+    color: rgb(214, 112, 16);
+    /* z-index: 2; */
+}
+.service{
+    margin-top: 10px;
+    margin-left: 130px;
+    font-size: 50px;
+    /* z-index: 2; */
+    color: rgb(214, 112, 16);
+}
+.content1 p{
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: gray;
+    line-height: 25px;
+    text-align: center ;
+     z-index: 2; 
+}
+.content1 h1{
+   margin-top: 8px;
+   text-align: center;
+}
+.section1:hover h1{
+    color: rgb(24, 109, 235);
+}
+.section2:hover h1{
+    color: rgb(24, 109, 235);
+}
+.section3:hover h1{
+    color: rgb(24, 109, 235);
+} 
+.section1:hover .para2{
+      color:bisque;
+    z-index: 2;
+}
+.section2:hover .para3{
+    color:bisque;
+    z-index: 2;
+}
+.section3:hover .para4{
+    color: bisque;
+    z-index: 2;
+} 
+.content1 a{
+    color: rgb(214, 112, 16);
+    text-align: center;
+    margin-top: 8px;
+    text-decoration: none;
+    margin-left: 120px;
+}
+a:active{
+    color: rgb(0, 0, 0);
+}
+.section1::after{
+   content:"";
+   position: absolute;
+   width: 0;
+   height: 0;
+   top: 0;
+   right: 0;
+   opacity: 0;
+}
+.section1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: rgba(32, 31, 31);
+    transition: 1.5s;
+    z-index: -3;
+}
+.section2::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+ }
+ .section2:hover::after{
+     width: 100%;
+     height: 100%;
+     opacity: 0.9;
+     background-color: rgb(32, 31, 31);
+     transition: 1.5s;   
+    z-index: -3;
+
+ }
+ .section3::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+ }
+ .section3:hover::after{
+     width: 100%;
+     height: 100%;
+     opacity: 0.9;
+     background-color: rgb(32, 31, 31);
+     transition: 1.5s; 
+    z-index: -3;
+
+ }
+/* ----------------------------------------------------------------------------------- */
+                                                  /* featred work */                  
+.contener3{
+    width: 100%;
+}
+.title3{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 80px;
+}
+.line2{
+    width:190px;
+    height: 4px;
+    background-color: rgb(214, 112, 30);
+    margin-left:560px ;
+}
+.content2{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+}
+.hover{
+    width: 25%;
+    height: 250px;
+    float: left;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+    padding: 18px 16px;
+    position: relative;
+}
+.hover2 , .hover5{
+    width: 25%;
+    height: 250px;
+    float: left;
+    /* border: 2px solid black; */
+    margin: 0 12%;
+    margin-top: 20px;
+    padding: 18px 16px;
+    position: relative;
+}
+.content2 .sec{
+    margin: auto;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1.5s;
+}
+.hover:hover .overlay{
+    visibility: visible;
+    opacity: 0.9;
+    z-index: 2;
+}
+.hover2:hover .overlay{
+    visibility: visible;
+    opacity: 0.9;
+    z-index: 2;
+}
+.hover:hover .overlay{
+    visibility: visible;
+    opacity: 0.9;
+    z-index: 2;
+}
+.hover:hover .overlay{
+    visibility: visible;
+    opacity: 0.9;
+    z-index: 2;
+}
+.hover5:hover .overlay{
+    visibility: visible;
+    opacity: 0.9;
+    z-index: 2;
+}
+.content2 h5{
+    font-size: 30px;
+    color: rgb(202, 82, 17);
+    text-align: center;
+    margin-top: 10px;
+}
+.content2 i{
+    font-size: 25px;
+    background-color: rgb(64, 64, 237);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.content2 b{
+    font-size: 25px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 25px;
+}
+.icons3{
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+                                      /* +what we offer/+ */
+.contener4{
+    width:100%
+}
+.content3{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.content3 div{
+    width: 25%;
+    height:285px ;
+    border: 2px solid black;
+    float:left ;
+    margin-top: 18px;
+}
+.title4{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 120px;
+}
+.line3{
+    width: 140px;
+    height: 4px;
+    margin-left: 600px;
+    background-color: rgb(214, 112, 30);
+}
+.pray{
+margin-top: 20px;
+margin-left: 20px;
+color: rgb(214, 112, 30);
+font-size: 60px;
+}
+.baby{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(214, 112, 30);
+    font-size: 60px;
+}
+.cog{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(214, 112, 30);
+    font-size: 60px;
+}
+.robot{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(214, 112, 30);
+    font-size: 60px;
+}
+.vihara{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(214, 112, 30);
+    font-size: 60px;
+}
+.smok{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(214, 112, 30);
+    font-size: 60px;
+    display: inline;
+}
+.content3 h1{
+display: inline;
+margin-left: 10px;
+}
+.content3 p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(69, 69, 69);
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding-left: 95px;
+}
+.sec8{
+    margin: 0   12%;
+}
+.sec11{
+    margin: 0   12%;
+}
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.contener4{
+    width: 100%;
+}
+.title5{
+    font-size: 70px;
+    margin-left: 25px;
+    margin-top: 100px;
+}
+.line4{
+    width: 140px;
+    height: 4px;
+    margin-left: 45px;
+    background-color: rgb(214, 112, 30);
+}
+.content4 .p9{
+display: inline-block;
+font-size: 20px;
+text-transform: capitalize;
+line-height: 40px;
+position: relative;
+color: gray;
+word-spacing: 3px;
+padding-left: 10px;
+}
+.p10{
+    font-size:19px;
+     margin-top: 60px;
+    text-transform: capitalize;
+    line-height: 25px;
+    color: gray;
+    padding-left: 25px;
+}
+.img1{
+    width:700px;
+    height:590px ;
+    position: absolute;
+    margin-left: 615px;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: contain;
+    background-size: cover;
+    margin-top: -190px;
+    background-image: url(../images/22222.jpg);
+    z-index: -1;
+}
+.content4 .circle{
+    font-size: 30px;
+    color: rgb(214, 112, 30);
+}
+.content4 li{
+    float: right;
+    font-size: 50px;
+    color:rgb(214, 112, 30); 
+    margin-top: 390px;
+}
+.point{
+    margin-right: 290px;
+}
+li:hover{
+    color:rgb(73, 41, 15);  
+}
+/* ----------------------------------------------------------------------------------------------- */
+.contener5{
+    width: 100%;
+    position: relative;
+}
+.img2{
+    width: 100%;
+    height: 380px;
+    margin-top: 250px;
+    background-image: url(../images/back.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* overflow: auto; */
+    position: relative;
+    z-index: -5;
+}
+.content5{
+    width: 100%;
+    height: 380px;
+    background-color: black;
+    opacity: 0.8;
+    position: relative;
+    position: absolute;
+    overflow: auto;
+}
+.content5 .icon1 i{
+    font-size: 50px;
+    color: rgb(214, 112, 30);
+    margin-left: 210px;
+    margin-top: 90px;
+    float: left;
+}
+.content5 .icon1 h1{
+    margin-left: 210px;
+    margin-top: 30px;
+    color: antiquewhite;
+    display: inline;
+    float: left;
+}
+.para p{
+    color: rgb(255, 253, 251);
+    /* color: rgb(214, 112, 30); */
+
+    /* opacity: 1; */
+    float: left;
+    /* margin-right: 100px; */
+     /* position: absolute; */
+     margin-left: 180px;
+     text-align: center;
+    margin-top: 240px;
+     font-size:20px ;
+    /* margin-left: -50px; */
+    /* display:inline-flex; */
+    display: inline;
+    
+}
+
+/* ----------------------------------------------------------------------------------------- */
+.contener6{
+    width: 100%;
+}
+.title6{
+    text-align: center;
+    margin-top: 120px;
+    font-size: 70px;
+}
+.line5{
+    width: 140px;
+    height: 4px;
+    margin-left: 490px;
+    background-color:rgb(214, 112, 30); 
+}
+.content6{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.div1{
+    width: 25%;
+    height: 450px;
+    border: 2px solid black;
+    margin-top: 70px;
+    float:left ;
+    text-align: center;
+    padding-top: 35px;
+    position: relative;
+}
+.div2{
+    width: 25%;
+    height: 450px;
+    border: 2px solid black;
+    margin-top: 70px;
+    float:left ;
+    text-align: center;
+    margin: 70px 12%;
+    padding-top: 35px;
+    position: relative;
+
+}
+.div3{
+    width: 25%;
+    height: 450px;
+    border: 2px solid black;
+    margin-top: 70px;
+    float:left ;
+    text-align: center;
+    position: relative;
+    padding-top: 35px;
+}
+.circit{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(214, 112, 30);
+    border-radius: 50%;
+    margin: auto;
+    padding-top: 10px;
+}
+.content6 p{
+    font-size: 25px;
+    color: rgb(79, 72, 72);
+    line-height: 55px;
+}
+button{
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(214, 112, 30);
+    color: black;
+    font-size: 15px;
+    margin-top: 25px;
+}
+button:active{
+    background-color:rgb(115, 62, 18) ;
+    color: antiquewhite;
+}
+.div1:hover p{
+    color: bisque;
+}
+.div1::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1s;
+ }
+ .div1:hover::after{
+     width: 100%;
+     height: 100%;
+     opacity: 0.8;
+     background-color: rgba(32, 31, 31);
+     transition: 1.5s;
+     z-index: -3;
+ }
+ .div2:hover p{
+    color: bisque;
+ }
+ .div2::after{
+    content:"";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    /* transition: 1s; */
+ }
+ .div2:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -3;
+    transition: 1s;
+    background-color:rgba(32, 31, 31) ;
+ }
+ .div3:hover p{
+    color: bisque;
+ }
+ .div3::after{
+    content:"";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    /* transition: 1s; */
+ }
+ .div3:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -3;
+    transition: 1s;
+    background-color:rgba(32, 31, 31) ;
+ }
+
+ /* ------------------------------------------------------------------------------------------------- */
+                                   /*  ---------div----------*/
+.contener7{
+    width: 100%;
+    margin-top: 120px;
+}
+/* .img10{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/back2.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.content7{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    overflow: auto;
+}
+.sec13{
+    width: 360px;
+    height: 200px;
+    border: 2px solid black;
+    float: left;
+    margin-top: 75px;
+    margin-left: 110px;
+    padding: 10px 10px;
+}
+.sec14{
+    width: 360px;
+    height: 200px;
+    border: 2px solid black;
+    float: left;
+    margin-top: 75px;
+    margin-left: 110px;
+    padding: 10px 10px;
+
+}
+.circit1{
+    width: 110px;
+    height: 100px;
+    background-image: url(../images/fried.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-flex;
+}
+.circit2{
+    width: 110px;
+    height: 100px;
+    background-image: url(../images/salamonsushi.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-flex;
+}
+.g1{
+    font-size: 22px;
+    display: inline;
+    color: rgb(240, 172, 90);
+    
+}
+.para10{
+    font-size: 15px;
+    color: antiquewhite;
+    display: inline;
+    line-height: 30px;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+                                   /*    our team     */
+.contener8{
+    width: 100%;
+}
+.content8{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.title7{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 100px;
+}
+.line6{
+    width: 100px;
+    height: 3px;
+    margin-left: 600px;
+    background-color:rgb(214, 112, 30) ;
+}
+.diva{
+    width: 30%;
+    float: left;
+    margin-top: 80px;
+    border: 2px solid black;
+    padding:18px  14px;
+    text-align: center;
+    background-color: rgb(156, 86, 29);
+    position: relative;
+}
+.layer{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color:rgba(32, 31, 31,0.5);
+    visibility: hidden;
+    opacity: o;
+} 
+.diva:hover .layer{
+    visibility: visible;
+    opacity: 1;
+}
+.divb:hover .layer{
+    visibility: visible;
+    opacity: 1;
+}
+.divc:hover .layer{
+    visibility: visible;
+    opacity: 1;
+}
+.layer i{
+    color: azure;
+    background-color: rgb(91, 91, 237);
+    line-height: 35px;
+    font-size: 25px;
+    display: block;
+    width: 30px;
+    margin-left: auto;
+}
+.layer a{
+    text-decoration: none;
+}
+.img20{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+/* .diva:hover .img20{
+    background-color: rgba(32, 31, 31);
+} */
+.img0{
+    width: 100%;
+}
+.divb{
+    width: 30%;
+    float: left;
+    border: 2px solid black;
+    padding:18px  14px;
+    margin: 80px  5%;
+    text-align: center;
+     background-color: rgb(156, 86, 29);
+    position: relative;
+
+}
+.divc{
+    width: 30%;
+    float: left;
+    margin-top: 80px;
+    border: 2px solid black;
+    padding:18px  14px;
+    text-align: center;
+    background-color: rgb(154, 86, 30);
+    position: relative;
+
+}
+.content8 h2{
+    font-size: 25px;
+    line-height: 37px;
+z-index: 3;
+}
+.diva:hover h2{
+    color: rgb(237, 180, 97);
+    z-index: 2;
+}
+.divb:hover h2{
+    color: rgb(249, 180, 97);
+}
+.divc:hover h2{
+    color: rgb(248, 180, 97);
+}
+.diva:hover p{
+    color: bisque;
+    z-index: 2;
+}
+.divb:hover p{
+    color: bisque;
+}
+.divc:hover p{
+    color: bisque;
+}
+.content8 p{
+    font-size: 17px;
+    line-height: 37px;
+}
+.diva::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1.5s;
+}
+.diva:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 31, 31);
+    opacity: 0.6;
+    z-index: 0;
+}
+.divb::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1.5s;
+}
+.divb:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 31, 31);
+    opacity: 0.6;
+    z-index: 0;
+}
+.divc::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1.5s;
+}
+.divc:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 31, 31);
+    opacity: 0.6;
+    z-index: 0;
+}
+/*---------------------------------------------------------------------------------------------------------- */
+                                        /* recent news */
+
+.contener9{
+    width: 100%;
+}
+.title8{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 90px;
+}
+.line7{
+    width: 170px;
+    height: 3px;
+    margin-left: 570px;
+    background-color: rgb(214, 112, 30);
+}
+.content9{
+    width: 80%;
+    margin: auto;
+}
+.div6{
+    width: 30%;
+    height: 600px;
+    float: left;
+    text-align: center;
+    position: relative;
+    border:2px solid black ;
+    padding: 18px  17px;
+    margin-top: 75px;
+}
+.div7{
+    width: 30%;
+    height: 600px;
+    float: left;
+    text-align: center;
+    position: relative;
+    border:2px solid black ;
+    padding: 18px  17px;
+    margin: 75px 5%;
+}
+.div8{
+    width: 30%;
+    height: 600px;
+    float: left;
+    text-align: center;
+    position: relative;
+    border:2px solid black ;
+    padding: 18px  17px;
+    margin-top: 75px;
+}
+.img11{
+    background-color: black;
+    height: 250px;
+    margin: auto;
+}
+.icons{
+    margin-top: 20px;
+}
+.icons i{
+    color: rgb(53, 111, 235);
+    font-size: 15px;
+    display: inline;
+    margin-left: 8px;
+}
+.icons p{
+    font-size: 15px;
+    line-height: 10px;
+    display: inline;
+}
+.picons{
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color:rgb(89, 86, 86);
+    margin-top: 20px;
+}
+.content9 a{
+    text-decoration: none;
+    color: rgb(212, 98, 27);
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: center;
+}
+.div6:hover p{
+    color: bisque;
+}
+.div7:hover p{
+    color: bisque;
+}
+.div8:hover p{
+    color: bisque;
+}
+
+.content9 a:active{
+    color: rgb(63, 56, 121);
+}
+.div6::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1.5s;
+}
+.div6:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 31, 31);
+    opacity: 0.7;
+    z-index: -1;
+}
+.div7::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1.5s;
+}
+.div7:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 31, 31);
+    opacity: 0.7;
+    z-index: -1;
+}
+.div8::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 1.5s;
+}
+.div8:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 31, 31);
+    opacity: 0.7;
+    z-index: -1;
+}
+/* ------------------------------------------------------------------------------------------------- */
+                                /* div */
+  .contener10{
+    width: 100%;
+  }             
+  .content10{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 650px;
+    overflow: auto;
+  }    
+  .img17{
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/logo.png);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    /* margin: auto; */
+    margin-top: 60px;
+    margin-left: 640px;
+    float: left;
+  }     
+  .icons2 i{
+    width: 60px;
+    height: 60px;
+      font-size: 40px;
+      color: aliceblue;
+      background-color:rgb(84, 84, 232) ;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 65px;
+  }  
+  .icons2 i:active{
+    background-color: rgb(77, 19, 132);
+  }      
+  .icons2{
+    margin: auto;
+    margin-top: 230px;
+    margin-right: 40px;
+    margin-left: 520px;
+  }
+  .para30{
+    color: rgb(130, 124, 124);
+    margin-top: 40px;
+    margin-left: 520px;
+  }
+/* ------------------------------------------------------------------------------------------------- */
